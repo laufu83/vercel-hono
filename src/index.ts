@@ -40,5 +40,4 @@ if (process.env.NODE_ENV !== 'production') {
   console.log(`服务已启动，监听端口: ${PORT}`)
 }
 // CommonJS 导出适配Vercel
-// module.exports = app;
-export default app
+module.exports = app;
