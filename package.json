@@ -1,0 +1,26 @@
+{
+  "name": "vod-api",
+  "version": "1.0.0",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "tsx src/index.node.ts",
+    "build": "tsc",
+    "start": "node dist/index.node.js",
+    "migrate": "knex migrate:latest"
+  },
+  "dependencies": {
+    "@hono/node-server": "^2.1.6",
+    "@vercel/node": "^3.2.0",
+    "dotenv": "^18.0.10",
+    "hono": "^4.6.14",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/pg": "^8.11.10",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
